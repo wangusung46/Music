@@ -9,7 +9,7 @@ import view.FormLogin;
 
 /**
  *
- * @author Bob
+ * @author Rakha
  */
 public class Main {
 
