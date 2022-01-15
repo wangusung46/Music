@@ -94,39 +94,52 @@ public class FormRegister extends JFrame {
         jButtonLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1080, 720));
+        setPreferredSize(new java.awt.Dimension(420, 335));
 
+        jPanel1.setBackground(java.awt.Color.darkGray);
         jPanel1.setPreferredSize(new java.awt.Dimension(1080, 720));
 
-        jLabelTheme.setBackground(new java.awt.Color(0, 204, 204));
         jLabelTheme.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        jLabelTheme.setForeground(java.awt.Color.white);
         jLabelTheme.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelTheme.setText("Author By Riyad");
-        jLabelTheme.setOpaque(true);
+        jLabelTheme.setText("Register");
 
+        jLabelUserName.setForeground(java.awt.Color.white);
         jLabelUserName.setText("Username");
 
         jTextUserName.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
+        jLabelEmail.setForeground(java.awt.Color.white);
         jLabelEmail.setText("Email");
 
         jTextEmail.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
+        jLabelGender.setForeground(java.awt.Color.white);
         jLabelGender.setText("Gender");
 
         buttonGroupGender.add(jRadioMale);
+        jRadioMale.setForeground(java.awt.Color.white);
         jRadioMale.setSelected(true);
         jRadioMale.setText("Male");
+        jRadioMale.setOpaque(false);
 
         buttonGroupGender.add(jRadioFamale);
+        jRadioFamale.setForeground(java.awt.Color.white);
         jRadioFamale.setText("Famale");
+        jRadioFamale.setOpaque(false);
 
+        jLabelPassword.setForeground(java.awt.Color.white);
         jLabelPassword.setText("Password");
 
+        jLabelPassword1.setForeground(java.awt.Color.white);
         jLabelPassword1.setText("Confirm Password");
 
+        jButtonRegister.setBackground(java.awt.Color.magenta);
+        jButtonRegister.setForeground(java.awt.Color.white);
         jButtonRegister.setText("Register");
 
+        jButtonLogin.setBackground(java.awt.Color.magenta);
+        jButtonLogin.setForeground(java.awt.Color.white);
         jButtonLogin.setText("Already have an Account? Login");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -163,7 +176,7 @@ public class FormRegister extends JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButtonRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButtonLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 953, Short.MAX_VALUE)))
+                        .addComponent(jButtonLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -205,17 +218,11 @@ public class FormRegister extends JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1068, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
         );
 
         pack();
